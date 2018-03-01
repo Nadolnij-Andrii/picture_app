@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/postitem_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:text="О"
+        android:textColor="?android:attr/textColorPrimary" />
+
+    <TextView
+        android:id="@+id/postitem_site"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postitem_post"
+
+        android:layout_toEndOf="@+id/image"
+        android:layout_toRightOf="@+id/image"
+        android:gravity="end"
+        android:text="A"
+        android:textAlignment="textEnd" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        />
+</RelativeLayout>
